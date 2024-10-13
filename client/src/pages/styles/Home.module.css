@@ -29,6 +29,7 @@ display: flex;
 .hero-line{
     font-size: 4.2rem;
     font-weight: 500;
+    color: var(--txt-color-black);
 
     }
 

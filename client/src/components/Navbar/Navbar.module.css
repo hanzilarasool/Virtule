@@ -8,7 +8,7 @@
 .navbar{
     width: 65%;
     height: 85px;
-     background-color: var(--white-color);
+     background: var(--nav-bg);
      /* background-color: rgba(0, 0, 0, 0.05); */
 
      box-shadow: var(--black-box-shadow);
@@ -25,6 +25,8 @@ overflow: hidden;
 }
 .navbar-list{
     list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 .navbar-list-item a{
     text-decoration: none;
@@ -38,6 +40,7 @@ overflow: hidden;
 .logo-figure{
     width: 100px;
     height: 100%;
+    /* background-color: white; */
 }
 .logo-img{
     width: 100%;
@@ -45,8 +48,15 @@ overflow: hidden;
     object-fit: contain;
     transform: scale(1.75);
 }
-
-
+.theme-toggle-btn-in-list{
+    /* transform: scale(1.5); */
+    cursor: pointer;
+}
+.theme-toggle-btn-in-list svg{
+    transform: scale(1.5);
+   
+    /* cursor: pointer; */
+}
 @media screen  and (max-width: 768px) {
 .navbar{
     width: 80%;
@@ -62,12 +72,13 @@ overflow: hidden;
     .navbar{
         width: 87%;
         height: 65px;
-        padding: 0 1.2rem;
+        padding: 0 1rem;
     }
     .logo-img{
-        transform: scale(1.30);
+        transform: scale(1.20);
     }
     .navbar-list-item a{
         padding: 0.6rem 1.1rem;    
+        font-size: 14px;
     }
     }
