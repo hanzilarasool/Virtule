@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import AnimatedElement from "../utils/AnimatedElement";
+
 function Navbar() {
   return (
     <main className={styles["navbar-wrapper"]}>
@@ -14,14 +14,12 @@ function Navbar() {
           </figure>
         </div>
         <ul className={styles["navbar-list"]}>
-          <AnimatedElement
-            as="li"
-            type="load"
-            delay={0.25}
+          <li
+   
             className={styles["navbar-list-item"]}
           >
             <NavLink to="#wait-list">WaitList</NavLink>{" "}
-          </AnimatedElement>
+          </li>
         </ul>
       </nav>
     </main>

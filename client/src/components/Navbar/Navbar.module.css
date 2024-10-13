@@ -9,6 +9,8 @@
     width: 65%;
     height: 85px;
      background-color: var(--white-color);
+     /* background-color: rgba(0, 0, 0, 0.05); */
+
      box-shadow: var(--black-box-shadow);
     position: fixed;
     top: 0;
@@ -32,7 +34,8 @@ overflow: hidden;
     color: var(--white-color);
     font-family: var(--font-family-sans-serif);
 
-}.logo-figure{
+}
+.logo-figure{
     width: 100px;
     height: 100%;
 }
@@ -48,12 +51,23 @@ overflow: hidden;
 .navbar{
     width: 80%;
     height: 80px;
+    padding: 0 1.8rem;
 }
+.logo-img{
+    transform: scale(1.5);
+}
+
 }
 @media screen  and (max-width: 567px) {
     .navbar{
         width: 87%;
         height: 65px;
+        padding: 0 1.2rem;
     }
-        
+    .logo-img{
+        transform: scale(1.30);
+    }
+    .navbar-list-item a{
+        padding: 0.6rem 1.1rem;    
+    }
     }
