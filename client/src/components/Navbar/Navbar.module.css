@@ -5,6 +5,7 @@
  
     
 }
+
 .navbar{
     width: 65%;
     height: 85px;
@@ -26,8 +27,15 @@ overflow: hidden;
 .navbar-list{
     list-style: none;
     display: flex;
+    align-items: center;
+
     gap: 1rem;
+   
 }
+.navbar-list-item {
+    vertical-align:center;
+
+  }
 .navbar-list-item a{
     text-decoration: none;
     background: var(--black-color);
@@ -57,6 +65,9 @@ overflow: hidden;
    
     /* cursor: pointer; */
 }
+/* toggle theme button */
+
+
 @media screen  and (max-width: 768px) {
 .navbar{
     width: 80%;

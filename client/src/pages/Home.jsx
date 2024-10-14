@@ -4,6 +4,7 @@ import AnimatedElement from "../components/utils/AnimatedElement";
 function Home() {
   return (
     <main className={styles["home-page-wrapper"]} >
+      <div className={styles["home-page-radial-gradient"]}></div>
 <Navbar/>
 <div className={styles["home-page"]}>
     <div className={styles["home-page-hero"]}>
