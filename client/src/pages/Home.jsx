@@ -113,7 +113,7 @@ return emailRegex.test(email);
           {isMobileView ? (
             theme === "dark" ? (
               <video
-              src="./videos/hero-vid-mobile-view-dark.mp4"
+              src="./videos/hero-vid-mobile-view-dark.webm"
               autoPlay
                 style={{  borderRadius: "10px" }}
                  // Use different mobile video for dark theme
@@ -121,7 +121,7 @@ return emailRegex.test(email);
                 //height="280px" // Set height for consistency
             
                 loop
-                type="video/mp4"
+                type="video/webm"
                 muted
                 playsInline
                 preload="auto"
