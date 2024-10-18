@@ -108,33 +108,48 @@ const StyledWrapper = styled.div`
       /* ... other styles ... */
 
   @media (max-width: 600px) {
+  .switch {
+
+    width: 52px;
+    // height: 34px;
+  // cursor:pointer;
+
+    // border-radius:25px
+  }
+  .slider{
+    padding:10px;
+    }
     .switch {
       height: 30px;
     }
         .slider {
-    border-radius: 28px;
+    border-radius: 24px;
   }
 
   .slider:before {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
+    top:1px;
   }
     .sun svg {
   
-    left: 34px;
-  
-    width: 20px;
-    height: 20px;
+    left: 30px;
+  top:9px;
+    width: 13px;
+    height: 13px;
   }
 
   .moon svg {
     fill: #73c0fc;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 8.5px;
+    left: 7px;
     z-index: 1;
-    width: 20px;
-    height: 20px;
+    width: 13px;
+    height: 13px;
+  }
+    .input:checked + .slider:before {
+    transform: translateX(21px);
   }
   }
 `;

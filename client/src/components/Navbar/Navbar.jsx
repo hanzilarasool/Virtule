@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import styles from "./Navbar.module.css";
 import { useTheme } from "../../context/theme-context/ThemeContext";
 import Switch from "../utils/Switch";
@@ -7,7 +7,7 @@ function Navbar() {
   const { isDark, setDark, setLight } = useTheme();
 
   const toggleTheme = () => {
-    if (isDark) {
+    if (isDark) { 
       setLight();  // Set to light theme
     } else {
       setDark();   // Set to dark theme
@@ -31,7 +31,7 @@ function Navbar() {
             <Switch isDark={isDark} toggleTheme={toggleTheme} />
           </li>
           <li className={styles["navbar-list-item"]}>
-            <NavLink to="#wait-list">Join the WaitList</NavLink>
+            <Link to="wait-list" smooth={true} duration={500} >Join the WaitList</Link>
           </li>
         </ul>
       </nav>

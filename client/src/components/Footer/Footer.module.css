@@ -1,0 +1,27 @@
+.footer-container-styles{
+    background-color: var(--Footer-color);
+   padding:1.8rem 2.5rem ;
+   margin-top: 1rem;
+    width: 100%;
+    color: var(--Footer-font-color);
+}
+.socials-and-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.socials{
+    display: flex;
+    gap: 1rem;
+  svg{
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: var(--Footer-font-color);
+  }
+  
+
+}
+
+.contact-via-email a{
+    color: var(--Footer-font-color);
+}
