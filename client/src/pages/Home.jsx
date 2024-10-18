@@ -102,6 +102,7 @@ return emailRegex.test(email);
             type="load"
             delay={0.25}
             className={styles["hero-para"]}
+            preload="auto"
           >
             Access ChatGPT, Claude, Perplexity, Stable Diffusion, text-to-video,
             music generation, voice conversion, PPT creation, health tracking,
@@ -112,42 +113,54 @@ return emailRegex.test(email);
           {isMobileView ? (
             theme === "dark" ? (
               <video
-                style={{ padding: "4.5px", borderRadius: "10px" }}
-                src="./videos/hero-vid-mobile-view-dark.mp4" // Use different mobile video for dark theme
+              src="./videos/hero-vid-mobile-view-dark.mp4"
+              autoPlay
+                style={{  borderRadius: "10px" }}
+                 // Use different mobile video for dark theme
                 width="100%"
                 //height="280px" // Set height for consistency
-                autoPlay
+            
                 loop
+                type="video/mp4"
                 muted
                 playsInline
+                preload="auto"
               >
+              
                 Your browser does not support the video tag.
               </video>
             ) : (
               <video
-                style={{ padding: "4.5px", borderRadius: "10px" }}
-                src="./videos/hero-vid-mobile-view.mp4" // Use different mobile video for light theme
+              src="./videos/hero-vid-mobile-view.mp4"
+                style={{  borderRadius: "10px" }}
+               // Use different mobile video for light theme
                 width="100%"
                 height="280px" // Set height for consistency
                 autoPlay
                 loop
                 muted
+                type="video/mp4"
                 playsInline
+                preload="auto"
               >
+               
                 Your browser does not support the video tag.
               </video>
             )
           ) : theme === "dark" ? (
             <video
               style={{  borderRadius: "10px" }}
-              src="./videos/hero-vid-black.mp4"
+             src="./videos/hero-vid-black.mp4"
               width="100%"
               height="280px"
               autoPlay
               loop
               muted
               playsInline
+              type="video/mp4"
+              preload="auto"
             >
+             
               Your browser does not support the video tag.
             </video>
           ) : (
@@ -160,7 +173,10 @@ return emailRegex.test(email);
               loop
               muted
               playsInline
+              preload="auto"
+              type="video/mp4"
             >
+              
               Your browser does not support the video tag.
             </video>
           )}
