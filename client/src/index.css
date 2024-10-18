@@ -33,9 +33,7 @@
 
 
 }
-html{
-  scroll-behavior: smooth;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -46,4 +44,6 @@ html{
 body {
   background-color: var(--background-color);
   overflow-x:hidden ;
+  overflow-y: scroll;  
+  scroll-behavior: smooth;
 }

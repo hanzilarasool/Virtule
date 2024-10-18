@@ -6,12 +6,12 @@
   height: 100vh;
   /* display: flex; */
 }
-.home-page-radial-gradient {
+/* .home-page-radial-gradient {
   width: 100%;
   height: 100%;
   top: 50%;
   position: absolute;
-}
+} */
 .home-page {
   /* box-sizing: border-box; */
   position: absolute;
