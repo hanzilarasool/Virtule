@@ -131,7 +131,7 @@ return emailRegex.test(email);
               </video>
             ) : (
               <video
-              src="./videos/hero-vid-mobile-view.mp4"
+              src="./videos/hero-vid-mobile-view.webm"
                 style={{  borderRadius: "10px" }}
                // Use different mobile video for light theme
                 width="100%"
@@ -139,7 +139,7 @@ return emailRegex.test(email);
                 autoPlay
                 loop
                 muted
-                type="video/mp4"
+                type="video/webm"
                 playsInline
                 preload="auto"
               >
@@ -150,14 +150,14 @@ return emailRegex.test(email);
           ) : theme === "dark" ? (
             <video
               style={{  borderRadius: "10px" }}
-             src="./videos/hero-vid-black.mp4"
+             src="./videos/hero-vid-black.webm"
               width="100%"
               height="280px"
               autoPlay
               loop
               muted
               playsInline
-              type="video/mp4"
+              type="video/webm"
               preload="auto"
             >
              
@@ -166,7 +166,7 @@ return emailRegex.test(email);
           ) : (
             <video
               style={{borderRadius: "10px" }}
-              src="./videos/hero-vid.mp4"
+              src="./videos/hero-vid.webm"
               width="100%"
               height="280px"
               autoPlay
@@ -174,7 +174,7 @@ return emailRegex.test(email);
               muted
               playsInline
               preload="auto"
-              type="video/mp4"
+              type="video/webm"
             >
               
               Your browser does not support the video tag.
